@@ -5,8 +5,8 @@ COPY config.json /etc/xray/config.json
 COPY xray.sh /xray.sh
 RUN chmod +x /xray.sh
 ENV PATH /usr/bin/xray:$PATH
-ENV PORT 80
-ENV TZ=Asia/Shanghai
+ENV PORT 443
+ENV TZ=Africa/Casablanca
 
 WORKDIR /etc/xray
 ENTRYPOINT ["/xray.sh"]
